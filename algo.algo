@@ -1,0 +1,23 @@
+ALGORITHM PHRASE
+VAR
+    NBV , NBC , NBM : integer 
+    i : integer
+    str : string
+BEGIN
+    write("mostfa is here.")
+    read(str)
+    WHILE (str[i] != ".") DO
+        NBC ++
+        IF (str[i]="") THEN
+            NBM ++
+        END_IF
+        IF (str[i] in ("a","e","u","o,"i","y")) THEN
+            NBV ++
+        END_IF
+        i ++
+    END_WHILE
+    
+    write(NBV)
+     write(NBM)
+      write(NBC)
+END
